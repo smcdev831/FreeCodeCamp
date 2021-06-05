@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+   </head>
+  <body>
+    <h1 id="title">Title</h1>
+    <p id="description">
+      This is a short description.
+    </p>
+    <form id="survey-form" action="/submit-survey-form">
+      <label for="name" id="name-label">Name</label>
+      <label for="email" id="email-label">Email</label>
+      <label for="number" id="number-label">Number</label>
+      <select id="dropdown">
+        <option value="mr">Mr.</option>
+        <option value="mrs">Mrs.</option>
+        <option value="ms">Ms.</option>
+        <option value="dr">Dr.</option>
+    </select>
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="number" id="number" placeholder="Number" required min="1" max="9">
+      <input type="radio" name="citizen" value="yes">Yes
+      <input type="radio" name="citizen" value="no">No
+      <input type="radio" name="citizen" value="decline">Decline
+      <input type="checkbox" name="location" value="continental">Continental US
+      <input type="checkbox" name="location" value="conterminous">Alaska or Hawaii
+      <input type="checkbox" name="location" value="protectorates">Protectorate
+      <input type="checkbox" name="location" value="International">International
+      <textarea placeholder="Tell us more" rows="1" cols="25"></textarea>
+      <button type="submit" id="submit">Submit</button>
+     </form>
+  </body>
+</html>
