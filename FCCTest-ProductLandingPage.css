@@ -1,6 +1,5 @@
 .nav-bar {
   display: flex;
   flex-align: center;
-  flex-wrap: wrap;
   flex-direction: row;
 }
