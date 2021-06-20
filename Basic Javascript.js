@@ -39,3 +39,8 @@ var titleCaseOver;
 studlyCapVar = 10;
 properCamelCase = "A String";
 titleCaseOver = 9000;
+
+var myVar = 87;
+
+// Only change code below this line
+myVar++;
