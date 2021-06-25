@@ -78,3 +78,15 @@ b /= 4;
 c /= 11;
 
 var myStr = "FirstLine\n\t\\SecondLine\nThirdLine"; // Change this line
+
+// Only change code below this line
+
+var myStr = "This is the first sentence. ";
+myStr += "This is the second sentence.";
+
+// Setup
+var firstLetterOfLastName = "";
+var lastName = "Lovelace";
+
+// Only change code below this line
+firstLetterOfLastName = lastName[0]; // Change this line
