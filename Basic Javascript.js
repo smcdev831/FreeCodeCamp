@@ -115,3 +115,7 @@ var myAdverb = "quickly";
 // Only change code below this line
 var wordBlanks = "The " + myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb + "."; // Change this line
 // Only change code above this line
+
+var myArray = [50,60,70];
+
+var myData = myArray[0];
