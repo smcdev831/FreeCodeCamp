@@ -7,9 +7,8 @@
     <h1 id="title">CSAT Survey</h1>
     <p id="description">This is a Customer Satisfaction Survey</p>
     <form id="survey-form">
-      Name:
-      <label for="name" id="name-label"
-        ><input
+      <label for="name" id="name-label">
+        Name:<input
           type="text"
           required
           id="name"
@@ -43,8 +42,12 @@
       <label for="contact-type">
         <input type="radio" name="contact-type" value="email" />Email</label
       >
-      <label for="agent"><input type="checkbox" id="agent" /> Agent</label>
-      <label for="policy"><input type="checkbox" id="policy" /> Policy</label>
+      <label for="agent"
+        ><input type="checkbox" id="agent" value="agent" /> Agent</label
+      >
+      <label for="policy"
+        ><input type="checkbox" id="policy" value="policy" /> Policy</label
+      >
       <textarea cols="30" rows="10"></textarea>
       <input type="submit" id="submit" />
     </form>
