@@ -5,5 +5,16 @@ img {
 #image {
   height: auto;
   max-width: 100%;
-  align-items: center;
+  margin: auto;
+}
+
+h1,
+h2,
+figcaption {
+  text-align: center;
+}
+
+* {
+  background-color: #af8a75;
+  color: #f0d7ac;
 }
