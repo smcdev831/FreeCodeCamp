@@ -1,5 +1,9 @@
 img {
-  max-width: 350px;
+  width: 350px;
   height: 300px;
   border-radius: 10px;
+}
+
+@media (min-width: 30em) and (orientation: landscape) {
+  /* … */
 }
