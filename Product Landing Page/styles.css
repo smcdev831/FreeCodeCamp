@@ -1,3 +1,19 @@
 * {
   display: flex;
 }
+
+#list {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 420px) {
+  #list {
+    font-size: 4.5rem;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0px;
+}
