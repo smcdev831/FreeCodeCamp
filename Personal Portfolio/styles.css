@@ -1,0 +1,8 @@
+#navbar {
+  position: fixed;
+  width: 100%;
+}
+
+@media (min-width: 30em) and (orientation: landscape) {
+  /* … */
+}
