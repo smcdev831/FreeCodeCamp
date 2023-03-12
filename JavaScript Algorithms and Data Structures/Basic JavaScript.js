@@ -212,3 +212,54 @@ const myArray = [
 ];
 
 const myData = myArray[2][1];
+
+// Setup
+const myArray = [
+  ["John", 23],
+  ["cat", 2],
+];
+
+// Only change code below this line
+
+myArray.push(["dog", 3]);
+
+// Setup
+const myArray = [
+  ["John", 23],
+  ["cat", 2],
+];
+
+// Only change code below this line
+let removedFromMyArray = myArray.pop();
+
+// Setup
+const myArray = [
+  ["John", 23],
+  ["dog", 3],
+];
+
+// Only change code below this line
+let removedFromMyArray = myArray.shift();
+
+// Setup
+const myArray = [
+  ["John", 23],
+  ["dog", 3],
+];
+myArray.shift();
+
+// Only change code below this line
+myArray.unshift(["Paul", 35]);
+
+const myList = [];
+myList.push(["Coke", 1]);
+myList.push(["Dr Pepper", 2]);
+myList.push(["Chips", 3]);
+myList.push(["Cookies", 4]);
+myList.push(["Sandwiches", 5]);
+
+function reusableFunction() {
+  console.log("Hi World");
+}
+
+reusableFunction();
