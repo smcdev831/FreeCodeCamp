@@ -965,6 +965,5 @@ function updateRecords(records, id, prop, value) {
   } else if (value === "") {
     delete records[id][prop];
   }
-
   return records;
 }
