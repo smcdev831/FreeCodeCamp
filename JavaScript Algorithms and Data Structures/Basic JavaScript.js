@@ -1038,3 +1038,38 @@ do {
   myArray.push(i);
   i++;
 } while (i < 5);
+
+function sum(arr, n) {
+  // Only change code below this line
+  if (n <= 0) {
+    return 0;
+  } else {
+    return sum(arr, n - 1) + arr[n - 1];
+  }
+  // Only change code above this line
+}
+
+for (let i = 0; i < contacts.length; i++) {
+  if (name === contacts[i].firstName) {
+    if (contacts[i].hasOwnProperty(prop)) {
+      return contacts[i][prop];
+    } else {
+      return "No such property";
+    }
+  } else {
+    return "No such contact";
+  }
+}
+
+function lookUpProfile(name, prop) {
+  for (let i = 0; x < contacts.length; i++) {
+    if (contacts[i].firstName === name) {
+      if (contacts[i].hasOwnProperty(prop)) {
+        return contacts[i][prop];
+      } else {
+        return "No such property";
+      }
+    }
+  }
+  return "No such contact";
+}
