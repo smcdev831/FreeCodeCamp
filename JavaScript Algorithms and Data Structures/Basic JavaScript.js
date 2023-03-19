@@ -1137,3 +1137,15 @@ function checkSign(num) {
 }
 
 checkSign(10);
+
+// Only change code below this line
+function countdown(n) {
+  if (n < 1) {
+    return [];
+  } else {
+    let count = countdown(n - 1);
+    count.unshift(n);
+    return count;
+  }
+}
+// Only change code above this line
