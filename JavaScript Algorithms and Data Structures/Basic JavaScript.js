@@ -1056,7 +1056,6 @@ for (let i = 0; i < contacts.length; i++) {
     } else {
       return "No such property";
     }
-  } else {
-    return "No such contact";
   }
+  return "No such contact";
 }
