@@ -202,3 +202,45 @@ const thermos = new Thermostat(76); // Setting in Fahrenheit scale
 let temp = thermos.temperature; // 24.44 in Celsius
 thermos.temperature = 26;
 temp = thermos.temperature; // 26 in Celsius
+
+<html>
+  <body>
+    <!-- Only change code below this line -->
+<script type="module" src="index.js"></script>
+
+    <!-- Only change code above this line -->
+  </body>
+</html>
+
+const uppercaseString = (string) => {
+  return string.toUpperCase();
+}
+
+const lowercaseString = (string) => {
+  return string.toLowerCase()
+}
+
+export { uppercaseString, lowercaseString}
+
+import {uppercaseString, lowercaseString} from './string_functions.js' 
+// Only change code above this line
+
+uppercaseString("hello");
+lowercaseString("WORLD!");
+
+import * as stringFunctions from './string_functions.js'
+// Only change code above this line
+
+stringFunctions.uppercaseString("hello");
+stringFunctions.lowercaseString("WORLD!");
+
+export default function subtract(x, y) {
+  return x - y;
+}
+
+import subtract from "./math_functions.js"
+// Only change code above this line
+
+subtract(7,4);
+
+const makeServerRequest = new Promise((resolve, reject)) => {})
