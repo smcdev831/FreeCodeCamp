@@ -115,3 +115,40 @@ function frankenSplice(arr1, arr2, n) {
   return localArray;
 }
 frankenSplice([1, 2, 3], [4, 5, 6], 1);
+
+function bouncer(arr) {
+  const filteredArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i]) filteredArr.push(arr[i]);
+  }
+  return filteredArr;
+}
+bouncer([7, "ate", "", false, 9]);
+
+function getIndexToIns(arr, num) {
+  arr.sort((a, b) => a - b);
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] >= num) return i;
+  }
+  return arr.length;
+}
+getIndexToIns([40, 60], 50);
+
+function mutation(arr) {
+  const test = arr[1].toLowerCase();
+  const target = arr[0].toLowerCase();
+  for (let i = 0; i < test.length; i++) {
+    if (target.indexOf(test[i]) < 0) return false;
+  }
+  return true;
+}
+mutation(["hello", "hey"]);
+
+function chunkArrayInGroups(arr, size) {
+  const newArr = [];
+  for (let i = 0; i < arr.length; i += size) {
+    newArr.push(arr.slice(i, i + size));
+  }
+  return newArr;
+}
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
