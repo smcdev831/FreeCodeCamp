@@ -106,3 +106,47 @@ function joinDogFraternity(candidate) {
     return false;
   }
 }
+
+function Dog(name) {
+  this.name = name;
+}
+Dog.prototype = {
+  // Only change code below this line
+  numLegs: 4,
+  eat: function () {
+    console.log("nom nom nom");
+  },
+  describe: function () {
+    console.log(`My name is ${this.name}`);
+  },
+};
+
+function Dog(name) {
+  this.name = name;
+}
+// Only change code below this line
+Dog.prototype = {
+  constructor: Dog,
+  numLegs: 4,
+  eat: function () {
+    console.log("nom nom nom");
+  },
+  describe: function () {
+    console.log("My name is " + this.name);
+  },
+};
+
+function Dog(name) {
+  this.name = name;
+}
+let beagle = new Dog("Snoopy");
+// Only change code below this line
+Dog.prototype.isPrototypeOf(beagle);
+
+function Dog(name) {
+  this.name = name;
+}
+let beagle = new Dog("Snoopy");
+Dog.prototype.isPrototypeOf(beagle); // yields true
+// Fix the code below so that it evaluates to true
+Object.prototype.isPrototypeOf(Dog.prototype);
