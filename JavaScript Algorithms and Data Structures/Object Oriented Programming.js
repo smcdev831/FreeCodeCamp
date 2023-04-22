@@ -150,3 +150,132 @@ let beagle = new Dog("Snoopy");
 Dog.prototype.isPrototypeOf(beagle); // yields true
 // Fix the code below so that it evaluates to true
 Object.prototype.isPrototypeOf(Dog.prototype);
+
+function Cat(name) {
+  this.name = name;
+}
+Cat.prototype = {
+  constructor: Cat,
+};
+function Bear(name) {
+  this.name = name;
+}
+Bear.prototype = {
+  constructor: Bear,
+};
+function Animal() {}
+Animal.prototype = {
+  constructor: Animal,
+  eat: function () {
+    console.log("nom nom nom");
+  },
+};
+
+function Animal() {}
+Animal.prototype = {
+  constructor: Animal,
+  eat: function () {
+    console.log("nom nom nom");
+  },
+};
+// Only change code below this line
+let duck = Object.create(Animal.prototype); // Change this line
+let beagle = Object.create(Animal.prototype); // Change this line
+
+function Animal() {}
+Animal.prototype = {
+  constructor: Animal,
+  eat: function () {
+    console.log("nom nom nom");
+  },
+};
+function Dog() {}
+// Only change code below this line
+Dog.prototype = Object.create(Animal.prototype);
+let beagle = new Dog();
+
+function Animal() {}
+function Bird() {}
+function Dog() {}
+
+Bird.prototype = Object.create(Animal.prototype);
+Dog.prototype = Object.create(Animal.prototype);
+// Only change code below this line
+Bird.prototype.constructor = Bird;
+Dog.prototype.constructor = Dog;
+let duck = new Bird();
+let beagle = new Dog();
+
+function Animal() {}
+Animal.prototype.eat = function () {
+  console.log("nom nom nom");
+};
+function Dog() {}
+// Only change code below this line
+Dog.prototype = Object.create(Animal.prototype);
+Dog.prototype.constructor = Dog;
+Dog.prototype.bark = function () {
+  console.log("Woof!");
+};
+// Only change code above this line
+let beagle = new Dog();
+
+function Bird() {}
+Bird.prototype.fly = function () {
+  return "I am flying!";
+};
+function Penguin() {}
+Penguin.prototype = Object.create(Bird.prototype);
+Penguin.prototype.constructor = Penguin;
+// Only change code below this line
+Penguin.prototype.fly = function () {
+  return "Alas, this is a flightless bird.";
+};
+// Only change code above this line
+let penguin = new Penguin();
+console.log(penguin.fly());
+
+let bird = {
+  name: "Donald",
+  numLegs: 2,
+};
+let boat = {
+  name: "Warrior",
+  type: "race-boat",
+};
+// Only change code below this line
+let glideMixin = function (obj) {
+  obj.glide = function () {
+    console.log("Gliding");
+  };
+};
+glideMixin(bird);
+glideMixin(boat);
+bird.glide();
+boat.glide();
+
+function Bird() {
+  let weight = 15;
+  this.getWeight = function () {
+    return weight;
+  };
+}
+
+(function () {
+  console.log("A cozy nest is ready");
+})();
+
+let funModule = (function () {
+  return {
+    isCuteMixin: function (obj) {
+      obj.isCute = function () {
+        return true;
+      };
+    },
+    singMixin: function (obj) {
+      obj.sing = function () {
+        console.log("Singing to an awesome tune");
+      };
+    },
+  };
+})();
