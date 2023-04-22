@@ -51,3 +51,58 @@ function Dog(name, color) {
   this.numLegs = 4;
 }
 let terrier = new Dog("Jack", "brown");
+
+function House(numBedrooms) {
+  this.numBedrooms = numBedrooms;
+}
+// Only change code below this line
+let myHouse = new House(3);
+myHouse instanceof House;
+
+function Bird(name) {
+  this.name = name;
+  this.numLegs = 2;
+}
+let canary = new Bird("Tweety");
+let ownProps = [];
+// Only change code below this line
+for (let property in canary) {
+  if (canary.hasOwnProperty(property)) {
+    ownProps.push(property);
+  }
+}
+
+function Dog(name) {
+  this.name = name;
+}
+Dog.prototype.numLegs = 2;
+// Only change code above this line
+let beagle = new Dog("Snoopy");
+
+function Dog(name) {
+  this.name = name;
+}
+Dog.prototype.numLegs = 4;
+let beagle = new Dog("Snoopy");
+let ownProps = [];
+let prototypeProps = [];
+// Only change code below this line
+for (let property in beagle) {
+  if (Dog.hasOwnProperty(property)) {
+    ownProps.push(property);
+  } else {
+    prototypeProps.push(property);
+  }
+}
+
+function Dog(name) {
+  this.name = name;
+}
+// Only change code below this line
+function joinDogFraternity(candidate) {
+  if (candidate.constructor === Dog) {
+    return true;
+  } else {
+    return false;
+  }
+}
