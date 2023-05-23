@@ -119,3 +119,31 @@ function incrementer(val) {
 
   // Only change code above this line
 }
+
+// The global variable
+const bookList = [
+  "The Hound of the Baskervilles",
+  "On The Electrodynamics of Moving Bodies",
+  "Philosophiæ Naturalis Principia Mathematica",
+  "Disquisitiones Arithmeticae",
+];
+
+// Change code below this line
+function add(list, bookName) {
+  let newList = [...list];
+  newList.push(bookName);
+  return newList;
+
+  // Change code above this line
+}
+
+// Change code below this line
+function remove(arr, bookName) {
+  let newArr = [...arr];
+  if (newArr.indexOf(bookName) >= 0) {
+    newArr.splice(newArr.indexOf(bookName), 1);
+    return newArr;
+
+    // Change code above this line
+  }
+}
